@@ -53,17 +53,17 @@ function ViewerHeader({
   const commitHash = process.env.COMMIT_HASH;
 
   const menuOptions = [
-    {
-      title: t('Header:About'),
-      icon: 'info',
-      onClick: () =>
-        show({
-          content: AboutModal,
-          title: t('AboutModal:About Viewer'),
-          contentProps: { versionNumber, commitHash },
-          containerDimensions: 'max-w-4xl max-h-4xl',
-        }),
-    },
+    // {
+    //   title: t('Header:About'),
+    //   icon: 'info',
+    //   onClick: () =>
+    //     show({
+    //       content: AboutModal,
+    //       title: t('AboutModal:About Viewer'),
+    //       contentProps: { versionNumber, commitHash },
+    //       containerDimensions: 'max-w-4xl max-h-4xl',
+    //     }),
+    // },
     {
       title: t('Header:Preferences'),
       icon: 'settings',
@@ -119,14 +119,14 @@ function ViewerHeader({
           buttonSection="secondary"
         />
       }
-      PatientInfo={
-        appConfig.showPatientInfo !== PatientInfoVisibility.DISABLED && (
-          <HeaderPatientInfo
-            servicesManager={servicesManager}
-            appConfig={appConfig}
-          />
-        )
-      }
+      // PatientInfo={
+      //   appConfig.showPatientInfo !== PatientInfoVisibility.DISABLED && (
+      //     <HeaderPatientInfo
+      //       servicesManager={servicesManager}
+      //       appConfig={appConfig}
+      //     />
+      //   )
+      // }
     >
       <div className="relative flex justify-center gap-[4px]">
         <Toolbar servicesManager={servicesManager} />

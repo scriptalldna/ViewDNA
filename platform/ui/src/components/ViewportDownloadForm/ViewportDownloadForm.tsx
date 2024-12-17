@@ -262,9 +262,9 @@ const ViewportDownloadForm = ({
 
   return (
     <div>
-      <Typography variant="h6">
+      {/* <Typography variant="h6">
         {t('Please specify the dimensions, filename, and desired type for the output image.')}
-      </Typography>
+      </Typography> */}
 
       <div className="mt-6 flex flex-col">
         <div className="mb-4 w-full">
